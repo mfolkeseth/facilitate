@@ -7,7 +7,7 @@
     "bower": "^1.4.1",
     "gulp": "^3.8.11",
     "gulp-sass": "^2.0.1",
-    "gulp-watch": "^4.2.4"
+    "gulp-watch": "^4.2.4",
     "http-server": "^0.8.0",
     "mongodb": "^2.0.31",
     "body-parser": "~1.12.0",
