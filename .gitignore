@@ -26,3 +26,4 @@ _testmain.go
 # Node
 node_modules
 vendor
+build
