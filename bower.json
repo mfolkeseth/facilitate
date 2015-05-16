@@ -1,0 +1,24 @@
+{
+  "name": "facilitate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/matifol/facilitate",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Martin Folkeseth"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "react": "~0.13.3"
+  }
+}

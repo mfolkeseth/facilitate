@@ -1,0 +1,25 @@
+{
+  "name": "facilitate",
+  "version": "0.0.1",
+  "description": "FacilityManagement",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11",
+    "gulp-sass": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matifol/facilitate.git"
+  },
+  "author": "Martin Folkeseth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matifol/facilitate/issues"
+  },
+  "homepage": "https://github.com/matifol/facilitate"
+}
