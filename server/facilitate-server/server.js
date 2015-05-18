@@ -40,19 +40,17 @@ router.get('/', function(req, res) {
 
 router.route('/tasks')
 
-    // create a bear (accessed at POST http://localhost:8080/api/bears)
     .post(function(req, res) {
         
         var task = new Task();
         task.title = req.body.title;
 		task.description = req.body.description;
 
-        // save the bear and check for errors
         task.save(function(err) {
             if (err)
                 res.send(err);
-
-            res.json({ message: 'Task created!' });
+				
+			res.json({status: 'OK', value: task});
         });
         
     })
@@ -77,7 +75,6 @@ router.route('/tasks/:task_id')
 	
 	.put(function(req, res) {
 
-        // use our bear model to find the bear we want
         Task.findById(req.params.task_id, function(err, task) {
 
             if (err)
@@ -90,16 +87,11 @@ router.route('/tasks/:task_id')
 				task.description = req.body.description;	
 			}
 
-            // save the bear
             task.save(function(err) {
                 if (err)
                     res.send(err);
 
-                Task.findById(req.params.task_id, function(err, task) {
-		            if (err)
-		                res.send(err);
-		            res.json(task);
-		        });
+		        res.json({status: 'OK', value: task});
             });
         });
     });
